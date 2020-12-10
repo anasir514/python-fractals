@@ -2,8 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 def mandel(c, z):
     return z*z + c
-part = []
-N, n = 600, 600
+N, n, part = 600, 600, []
 for c_r in np.linspace(-2, 2, N):
     for c_i in np.linspace(-2, 2, N):
         k = 0
